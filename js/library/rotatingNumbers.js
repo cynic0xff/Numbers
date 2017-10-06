@@ -10,7 +10,7 @@
   formatDigit = '(,ddd).dd';
   parser = /^\(?([^)]*)\)?(?:(.)(d+))?$/;
   frameRate = 30;
-  duration = 2000;
+  duration = 5000;
   frameRateCounter = 20;
   frameValue = 2;
   digitSpeedIncrease = .5;
@@ -622,5 +622,29 @@
   } else {
     window.numberMap = numberMap;
   }
+
+(function generateNumbers() {
+  
+  //IFFE mapNumbers
+  (function mapNumbers() {
+    setTimeout(function(){
+            var counter = document.getElementsByClassName("numberMap");
+            counter[0].innerHTML = NRT.Moxi.agents;
+            
+            //call office counter
+            setTimeout(function(){
+                counter[1].innerHTML = NRT.Moxi.offices;
+                
+                //call countries
+                setTimeout(function(){
+                    counter[2].innerHTML = NRT.Moxi.countries;
+                }, NRT.Moxi.delay);
+            }, NRT.Moxi.delay);
+        }, NRT.Moxi.delay);
+    })();
+
+    //
+
+  }());
 
 }).call(this);
