@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+.numberMap {
+  font-size: 28px;
+}
+</style>
+<script>
+window.numberMapOptions = {
+  format: '(ddd,ddd)'
+};
+</script>
+
+<script src="js/numberMap.js"></script>
+Agents <div class="numberMap">0</div><br/>
+Offices <div class="numberMap">0</div><br />
+Country <div class="numberMap">0</div>
+
+<script>
+    setTimeout(function(){
+        var counter = document.getElementsByClassName("numberMap");
+        counter[0].innerHTML = '88000';
+        
+        //call office counter
+        setTimeout(function(){
+            counter[1].innerHTML = '3000';
+            
+            //call countries
+            setTimeout(function(){
+                counter[2].innerHTML = '49';
+            }, 1000);
+        }, 1000);
+    }, 1000);
+    
+
+</script>

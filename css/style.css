@@ -1,0 +1,98 @@
+.numberMap.numberMap-auto-theme, .numberMap.numberMap-theme-default {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+}
+.numberMap.numberMap-auto-theme, .numberMap.numberMap-theme-default {
+  *display: inline;
+}
+.numberMap.numberMap-auto-theme .numberMap-digit, .numberMap.numberMap-theme-default .numberMap-digit {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+}
+.numberMap.numberMap-auto-theme .numberMap-digit, .numberMap.numberMap-theme-default .numberMap-digit {
+  *display: inline;
+}
+.numberMap.numberMap-auto-theme .numberMap-digit .numberMap-digit-spacer, .numberMap.numberMap-theme-default .numberMap-digit .numberMap-digit-spacer {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  visibility: hidden;
+}
+.numberMap.numberMap-auto-theme .numberMap-digit .numberMap-digit-spacer, .numberMap.numberMap-theme-default .numberMap-digit .numberMap-digit-spacer {
+  *display: inline;
+}
+.numberMap.numberMap-auto-theme .numberMap-digit .numberMap-digit-inner, .numberMap.numberMap-theme-default .numberMap-digit .numberMap-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.numberMap.numberMap-auto-theme .numberMap-digit .numberMap-ribbon, .numberMap.numberMap-theme-default .numberMap-digit .numberMap-ribbon {
+  display: block;
+}
+.numberMap.numberMap-auto-theme .numberMap-digit .numberMap-ribbon-inner, .numberMap.numberMap-theme-default .numberMap-digit .numberMap-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+.numberMap.numberMap-auto-theme .numberMap-digit .numberMap-value, .numberMap.numberMap-theme-default .numberMap-digit .numberMap-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+.numberMap.numberMap-auto-theme .numberMap-digit .numberMap-value.numberMap-last-value, .numberMap.numberMap-theme-default .numberMap-digit .numberMap-value.numberMap-last-value {
+  position: absolute;
+}
+.numberMap.numberMap-auto-theme.numberMap-animating-up .numberMap-ribbon-inner, .numberMap.numberMap-theme-default.numberMap-animating-up .numberMap-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+}
+.numberMap.numberMap-auto-theme.numberMap-animating-up.numberMap-animating .numberMap-ribbon-inner, .numberMap.numberMap-theme-default.numberMap-animating-up.numberMap-animating .numberMap-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.numberMap.numberMap-auto-theme.numberMap-animating-down .numberMap-ribbon-inner, .numberMap.numberMap-theme-default.numberMap-animating-down .numberMap-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.numberMap.numberMap-auto-theme.numberMap-animating-down.numberMap-animating .numberMap-ribbon-inner, .numberMap.numberMap-theme-default.numberMap-animating-down.numberMap-animating .numberMap-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.numberMap.numberMap-auto-theme, .numberMap.numberMap-theme-default {
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.1em;
+}
+.numberMap.numberMap-auto-theme .numberMap-value, .numberMap.numberMap-theme-default .numberMap-value {
+  text-align: center;
+}
