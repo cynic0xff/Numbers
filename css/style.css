@@ -1,4 +1,13 @@
 .numberMap.numberMap-auto-theme, .numberMap.numberMap-theme-default {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  line-height: 1.1em;
+}
+.numberMap.numberMap-auto-theme .numberMap-value, .numberMap.numberMap-theme-default .numberMap-value {
+  text-align: center;
+}
+
+.numberMap.numberMap-auto-theme, .numberMap.numberMap-theme-default {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -87,12 +96,4 @@
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
-}
-
-.numberMap.numberMap-auto-theme, .numberMap.numberMap-theme-default {
-  font-family: "Helvetica Neue", sans-serif;
-  line-height: 1.1em;
-}
-.numberMap.numberMap-auto-theme .numberMap-value, .numberMap.numberMap-theme-default .numberMap-value {
-  text-align: center;
 }
